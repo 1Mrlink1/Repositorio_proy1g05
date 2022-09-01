@@ -1,23 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package proy1g05;
+package proy1g5;
 
-/**
- *
- * @author roycks
- */
 public class Habitacion {
     private NodoH next;
     private NodoH head;
-    private NodoH aux;
-    private Huesped persona;
-    
+    private NodoHu huesped;
+    private NodoH tail;
     
     public Habitacion(){
         head=new NodoH(null,null);
+        tail=head;
     }
-    
+    public boolean agregarHuesped(String rut, String nombre, int edad, int nro){
+          Huesped h=new Huesped (rut,nombre,edad,nro);
+    }
 }
